@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sazón</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+            <a class="logo" asp-controller="Categorias" asp-action="Index">
+                Sazón
+            </a>
+
+            <nav class="menu">
+
+                <a asp-controller="Categorias" asp-action="Index">
+                    Categorías
+                </a>
+
+                <a href="#">
+                    Clases
+                </a>
+
+                <a href="#">
+                    Profesores
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main class="main-content">
+
+        @RenderBody()
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>© 2026 Sazón · Experiencias gastronómicas</p>
+
+    </footer>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

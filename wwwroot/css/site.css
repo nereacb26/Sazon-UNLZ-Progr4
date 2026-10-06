@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f5f0;
+    color: #2f2a26;
+}
+
+
+/* =========================
+    MENU
+   ========================= */
+
+.navbar {
+    background-color: #fffaf5;
+    border-bottom: 1px solid #eadfd4;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #9b4d27;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+    .menu a {
+        text-decoration: none;
+        color: #51483f;
+        font-size: 16px;
+    }
+
+        .menu a:hover {
+            color: #9b4d27;
+        }
+
+
+/* =========================
+   CONTENIDO
+   ========================= */
+
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 30px;
+}
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #b86b3c;
+}
+
+.page-header h1 {
+    margin: 8px 0 10px;
+    font-size: 42px;
+}
+
+.page-header p {
+    max-width: 650px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #70675f;
+}
+
+
+/* =========================
+   BOTÓN PRINCIPAL
+   ========================= */
+
+.btn-primary {
+    display: inline-block;
+    padding: 13px 22px;
+    background-color: #9b4d27;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+    .btn-primary:hover {
+        background-color: #7e3e20;
+    }
+
+
+/* =========================
+   TARJETAS
+   ========================= */
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.category-card {
+    background-color: white;
+    border: 1px solid #eadfd4;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 5px 18px rgba(60, 40, 20, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .category-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(60, 40, 20, 0.12);
+    }
+
+
+/* =========================
+   ICONO
+   ========================= */
+
+.category-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4e4d5;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CONTENIDO TARJETA
+   ========================= */
+
+.category-content h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+.category-content p {
+    min-height: 70px;
+    margin: 0 0 20px;
+    color: #70675f;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   ESTADO
+   ========================= */
+
+.status {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.active {
+    color: #4c7a52;
+}
+
+.inactive {
+    color: #a05252;
+}
+
+
+/* =========================
+   ACCIONES
+   ========================= */
+
+.category-actions {
+    margin-top: 22px;
+    border-top: 1px solid #eee5dc;
+    padding-top: 18px;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    color: #9b4d27;
+    font-weight: bold;
+}
+
+    .btn-secondary:hover {
+        text-decoration: underline;
+    }
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #827970;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+}
+/* =========================
+   FORMULARIOS
+   ========================= */
+
+.form-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-card {
+    background-color: white;
+    border: 1px solid #eadfd4;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(60, 40, 20, 0.08);
+}
+
+.form-header {
+    margin-bottom: 35px;
+}
+
+    .form-header h1 {
+        margin: 8px 0 10px;
+        font-size: 36px;
+    }
+
+    .form-header p {
+        color: #70675f;
+        line-height: 1.6;
+    }
+
+
+/* =========================
+   CAMPOS
+   ========================= */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #443b34;
+    }
+
+.form-input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d9cec3;
+    border-radius: 8px;
+    background-color: #fffdfb;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+
+    .form-input:focus {
+        border-color: #9b4d27;
+        box-shadow: 0 0 0 3px rgba(155, 77, 39, 0.12);
+    }
+
+.textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+
+/* =========================
+   CHECKBOX
+   ========================= */
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+    color: #443b34;
+}
+
+    .checkbox-group input {
+        width: 18px;
+        height: 18px;
+    }
+
+
+/* =========================
+   BOTONES FORMULARIO
+   ========================= */
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-cancel {
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #6b625a;
+    background-color: #eee8e2;
+}
+
+    .btn-cancel:hover {
+        background-color: #e2dad2;
+    }
+
+
+/* =========================
+   BOTÓN DESACTIVAR
+   ========================= */
+
+.btn-danger {
+    border: none;
+    background-color: transparent;
+    color: #a05252;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .btn-danger:hover {
+        text-decoration: underline;
+    }
+
+.delete-form {
+    display: inline;
+}
